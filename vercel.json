@@ -1,0 +1,71 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/contact", "destination": "/pages/contact.html" },
+    { "source": "/about", "destination": "/pages/about.html" },
+    { "source": "/shop", "destination": "/pages/all-products.html" },
+    { "source": "/products", "destination": "/pages/all-products.html" },
+    { "source": "/new-arrivals", "destination": "/pages/new-arrivals.html" },
+    { "source": "/collection", "destination": "/pages/collection.html" },
+    { "source": "/track-order", "destination": "/pages/track-order.html" },
+    { "source": "/privacy", "destination": "/pages/privacy-policy.html" },
+    { "source": "/terms", "destination": "/pages/terms.html" },
+    { "source": "/shipping", "destination": "/pages/shipping-policy.html" },
+    { "source": "/refund", "destination": "/pages/refund-policy.html" },
+    { "source": "/product", "destination": "/pages/product.html" }
+  ],
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/pages/contact.html", "destination": "/contact", "permanent": false },
+    { "source": "/pages/about.html", "destination": "/about", "permanent": false }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "geolocation=(), microphone=(), camera=()" }
+      ]
+    },
+    {
+      "source": "/index.html",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/pages/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000, immutable" }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000, immutable" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
+  ]
+}
