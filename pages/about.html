@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Story | LuxeVally</title>
+  <link rel="icon" href="../assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="font-sans bg-luxe-soft text-gray-800">
+  <!-- Header -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-gray-100 sticky top-0 z-50 transition-shadow duration-300"
+    id="main-header">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div class="hidden lg:flex items-center justify-between gap-4 h-20">
+        <a href="../index.html" class="flex-shrink-0 leading-none">
+          <span class="font-script text-3xl xl:text-4xl text-luxe-green tracking-wide">LuxeVally</span>
+        </a>
+        <nav class="flex items-center justify-center flex-1 flex-wrap gap-x-4 xl:gap-x-6 gap-y-1 text-sm font-medium"
+          aria-label="Main">
+          <a href="../index.html" class="text-gray-700 hover:text-luxe-green transition whitespace-nowrap">Home</a>
+          <a href="new-arrivals.html" class="text-gray-700 hover:text-luxe-green transition whitespace-nowrap">New
+            Arrivals</a>
+          <a href="all-products.html?category=Decorative%20Lighting"
+            class="text-gray-700 hover:text-luxe-green transition whitespace-nowrap text-sm">Decorative Lighting</a>
+          <a href="all-products.html?category=Mobile%20Accessories"
+            class="text-gray-700 hover:text-luxe-green transition whitespace-nowrap text-sm">Mobile Accessories</a>
+          <a href="all-products.html?category=Birthday%20Decorations"
+            class="text-gray-700 hover:text-luxe-green transition whitespace-nowrap text-sm">Birthday Decorations</a>
+          <a href="all-products.html?category=Wedding%20Decorations"
+            class="text-gray-700 hover:text-luxe-green transition whitespace-nowrap text-sm">Wedding Decorations</a>
+          <div class="relative group">
+            <button type="button"
+              class="text-gray-700 hover:text-luxe-green transition flex items-center gap-1 whitespace-nowrap">
+              Shop
+              <svg class="w-3.5 h-3.5 transition group-hover:rotate-180" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div
+              class="absolute left-1/2 -translate-x-1/2 top-full pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="bg-white shadow-xl rounded-lg border border-gray-100 py-2 w-56 max-h-[70vh] overflow-y-auto">
+                <a href="all-products.html?category=Decorative%20Lighting"
+                  class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-luxe-cream hover:text-luxe-green transition">LED
+                  String Lights</a>
+                <a href="all-products.html?category=Decorative%20Lighting"
+                  class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-luxe-cream hover:text-luxe-green transition">Neon
+                  & RGB Lights</a>
+                <a href="all-products.html?category=Mobile%20Accessories"
+                  class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-luxe-cream hover:text-luxe-green transition">Phone
+                  Cases</a>
+                <a href="all-products.html?category=Mobile%20Accessories"
+                  class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-luxe-cream hover:text-luxe-green transition">Chargers
+                  & Cables</a>
+                <a href="all-products.html?category=Mobile%20Accessories"
+                  class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-luxe-cream hover:text-luxe-green transition">Earbuds
+                  & Audio</a>
+                <a href="all-products.html?category=Mobile%20Accessories"
+                  class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-luxe-cream hover:text-luxe-green transition">Power
+                  Banks</a>
+                <a href="all-products.html?category=Birthday%20Decorations"
+                  class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-luxe-cream hover:text-luxe-green transition">Balloon
+                  Kits</a>
+                <a href="all-products.html?category=Birthday%20Decorations"
+                  class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-luxe-cream hover:text-luxe-green transition">Party
+                  Lights</a>
+                <a href="all-products.html?category=Wedding%20Decorations"
+                  class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-luxe-cream hover:text-luxe-green transition">Wedding
+                  Backdrops</a>
+                <a href="all-products.html?category=Wedding%20Decorations"
+                  class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-luxe-cream hover:text-luxe-green transition">Photo
+                  Booth Props</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="flex-shrink-0">
+          <button type="button" id="search-btn"
+            class="p-2 text-gray-600 hover:text-luxe-green transition rounded-lg hover:bg-luxe-cream"
+            aria-label="Search">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="grid grid-cols-3 items-center h-14 sm:h-16 lg:hidden">
+        <div class="flex items-center justify-start">
+          <button type="button" id="mobile-menu-btn"
+            class="p-2 -ml-1 text-luxe-green rounded-lg hover:bg-luxe-cream transition" aria-label="Open menu"
+            aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex items-center justify-center">
+          <a href="../index.html" class="leading-none"><span
+              class="font-script text-2xl sm:text-3xl text-luxe-green tracking-wide">LuxeVally</span></a>
+        </div>
+        <div class="flex items-center justify-end">
+          <button type="button" id="search-btn-mobile"
+            class="p-2 text-gray-600 hover:text-luxe-green transition rounded-lg hover:bg-luxe-cream"
+            aria-label="Search">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="mobile-drawer-overlay"
+    class="fixed inset-0 bg-black/40 z-[60] opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden">
+  </div>
+  <div id="mobile-menu"
+    class="fixed inset-y-0 left-0 z-[70] w-[min(100%,20rem)] max-w-[85vw] bg-white shadow-2xl -translate-x-full transition-transform duration-300 ease-out lg:hidden flex flex-col"
+    role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="flex items-center justify-between px-4 h-14 border-b border-gray-100 shrink-0">
+      <a href="../index.html" class="font-script text-2xl text-luxe-green">LuxeVally</a>
+      <button type="button" id="mobile-menu-close" class="p-2 text-luxe-deep hover:text-luxe-green rounded-lg"
+        aria-label="Close menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <nav class="flex-1 overflow-y-auto px-4 py-4">
+      <a href="../index.html"
+        class="block py-3 text-base text-luxe-deep hover:text-luxe-green border-b border-gray-50">Home</a>
+      <a href="new-arrivals.html"
+        class="block py-3 text-base text-luxe-deep hover:text-luxe-green border-b border-gray-50">New Arrivals</a>
+      <a href="all-products.html?category=Decorative%20Lighting"
+        class="block py-3 text-base text-luxe-deep hover:text-luxe-green border-b border-gray-50">Decorative
+        Lighting</a>
+      <a href="all-products.html?category=Mobile%20Accessories"
+        class="block py-3 text-base text-luxe-deep hover:text-luxe-green border-b border-gray-50">Mobile Accessories</a>
+      <a href="all-products.html?category=Birthday%20Decorations"
+        class="block py-3 text-base text-luxe-deep hover:text-luxe-green border-b border-gray-50">Birthday
+        Decorations</a>
+      <a href="all-products.html?category=Wedding%20Decorations"
+        class="block py-3 text-base text-luxe-deep hover:text-luxe-green border-b border-gray-50">Wedding
+        Decorations</a>
+      <button type="button" id="mobile-shop-btn"
+        class="w-full flex items-center justify-between py-3 text-base text-luxe-deep hover:text-luxe-green border-b border-gray-50">
+        <span>Shop</span>
+        <svg class="w-4 h-4 transition-transform duration-300" id="mobile-shop-chevron" fill="none"
+          stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      <div id="mobile-shop-menu" class="overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out pl-2">
+        <a href="all-products.html?category=Decorative%20Lighting"
+          class="block py-2.5 pl-2 text-sm text-gray-600 hover:text-luxe-green">LED String Lights</a>
+        <a href="all-products.html?category=Decorative%20Lighting"
+          class="block py-2.5 pl-2 text-sm text-gray-600 hover:text-luxe-green">Neon & RGB Lights</a>
+        <a href="all-products.html?category=Mobile%20Accessories"
+          class="block py-2.5 pl-2 text-sm text-gray-600 hover:text-luxe-green">Phone Cases</a>
+        <a href="all-products.html?category=Mobile%20Accessories"
+          class="block py-2.5 pl-2 text-sm text-gray-600 hover:text-luxe-green">Chargers & Cables</a>
+        <a href="all-products.html?category=Mobile%20Accessories"
+          class="block py-2.5 pl-2 text-sm text-gray-600 hover:text-luxe-green">Earbuds & Audio</a>
+        <a href="all-products.html?category=Mobile%20Accessories"
+          class="block py-2.5 pl-2 text-sm text-gray-600 hover:text-luxe-green">Power Banks</a>
+        <a href="all-products.html?category=Birthday%20Decorations"
+          class="block py-2.5 pl-2 text-sm text-gray-600 hover:text-luxe-green">Balloon Kits</a>
+        <a href="all-products.html?category=Birthday%20Decorations"
+          class="block py-2.5 pl-2 text-sm text-gray-600 hover:text-luxe-green">Party Lights</a>
+        <a href="all-products.html?category=Wedding%20Decorations"
+          class="block py-2.5 pl-2 text-sm text-gray-600 hover:text-luxe-green">Wedding Backdrops</a>
+        <a href="all-products.html?category=Wedding%20Decorations"
+          class="block py-2.5 pl-2 text-sm text-gray-600 hover:text-luxe-green">Photo Booth Props</a>
+      </div>
+      <a href="contact.html"
+        class="block py-3 text-base text-luxe-deep hover:text-luxe-green border-b border-gray-50">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Search Overlay -->
+  <div id="search-overlay" class="fixed inset-0 bg-black/40 z-50 hidden items-start justify-center pt-24 px-4">
+    <div class="bg-white rounded-xl shadow-2xl w-full max-w-xl p-4">
+      <div class="flex items-center gap-3">
+        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input type="text" id="search-input" placeholder="Search by name, fabric, color..."
+          class="flex-1 outline-none text-lg py-2" />
+        <button type="button" id="close-search" class="text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+      </div>
+      <div id="search-results" class="mt-4 max-h-80 overflow-y-auto hidden"></div>
+    </div>
+  </div>
+
+  <main class="max-w-4xl mx-auto px-4 py-16">
+    <p class="text-luxe-gold text-sm tracking-[0.25em] uppercase mb-3 text-center">Our Story</p>
+    <h1 class="font-serif text-4xl text-luxe-deep text-center mb-10">Weaving Heritage into Every Thread</h1>
+    <div class="prose max-w-none text-gray-600 leading-relaxed space-y-6 font-light text-lg">
+      <p>LuxeVally was founded with a simple belief: the modern Indian woman deserves access to authentic, high-quality
+        handloom products without compromise on comfort or contemporary style.</p>
+      <p>We work directly with master weavers in Maheshwar, Varanasi, Kota and other heritage clusters. By eliminating
+        middle layers, we ensure fair compensation for artisans and better value for you.</p>
+      <p>Every piece in our collection is hand-selected for quality of weave, colour fastness and drape. We celebrate
+        both festive grandeur and everyday elegance — Banarasi for celebrations, Mulmul and Linen for daily grace.</p>
+      <p>Thank you for supporting Indian craftsmanship with us.</p>
+    </div>
+    <div class="mt-12 text-center">
+      <a href="all-products.html"
+        class="inline-block bg-luxe-green text-white px-8 py-3 rounded-lg text-sm font-medium tracking-wider uppercase hover:bg-luxe-deep transition">Explore
+        Collection</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-luxe-deep text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
+        <div class="sm:col-span-2 lg:col-span-1">
+          <span class="font-script text-3xl text-white">LuxeVally</span>
+          <p class="mt-4 text-white/70 text-sm leading-relaxed font-light">Premium decorative lighting, mobile
+            accessories and celebration décor — for homes, parties, birthdays and weddings. Order on WhatsApp.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-medium tracking-wider uppercase mb-4 text-luxe-gold">Categories</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="all-products.html?category=Decorative%20Lighting"
+                class="hover:text-white transition">Decorative Lighting</a></li>
+            <li><a href="all-products.html?category=Mobile%20Accessories" class="hover:text-white transition">Mobile
+                Accessories</a></li>
+            <li><a href="all-products.html?category=Birthday%20Decorations" class="hover:text-white transition">Birthday
+                Decorations</a></li>
+            <li><a href="all-products.html?category=Wedding%20Decorations" class="hover:text-white transition">Wedding
+                Decorations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-medium tracking-wider uppercase mb-4 text-luxe-gold">Shop</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="all-products.html?category=Decorative%20Lighting" class="hover:text-white transition">LED &amp;
+                Neon Lights</a></li>
+            <li><a href="all-products.html?category=Mobile%20Accessories" class="hover:text-white transition">Chargers
+                &amp; Cases</a></li>
+            <li><a href="all-products.html?category=Birthday%20Decorations" class="hover:text-white transition">Party
+                Kits</a></li>
+            <li><a href="all-products.html?category=Wedding%20Decorations" class="hover:text-white transition">Wedding
+                Décor</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-medium tracking-wider uppercase mb-4 text-luxe-gold">Support</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li><a href="contact.html" class="hover:text-white transition">Contact Us</a></li>
+            <li><a href="track-order.html" class="hover:text-white transition">Track Order</a></li>
+            <li><a href="shipping-policy.html" class="hover:text-white transition">Shipping Policy</a></li>
+            <li><a href="refund-policy.html" class="hover:text-white transition">Refund &amp; Returns</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-medium tracking-wider uppercase mb-4 text-luxe-gold">Follow On</h4>
+          <div class="flex flex-wrap gap-3 mt-2">
+            <a href="https://instagram.com/luxevally" target="_blank" rel="noopener"
+              class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/80 hover:bg-white/10 transition"
+              aria-label="Instagram"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg></a>
+            <a href="https://facebook.com/luxevally" target="_blank" rel="noopener"
+              class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/80 hover:bg-white/10 transition"
+              aria-label="Facebook"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg></a>
+            <a href="https://youtube.com/@luxevally" target="_blank" rel="noopener"
+              class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/80 hover:bg-white/10 transition"
+              aria-label="YouTube"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg></a>
+            <a href="mailto:rohitstone9@gmail.com"
+              class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center text-white/80 hover:bg-white/10 transition"
+              aria-label="Email"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
+        <p>© 2026 LuxeVally. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a href="privacy-policy.html" class="hover:text-white transition">Privacy</a>
+          <a href="terms.html" class="hover:text-white transition">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- WhatsApp Floating -->
+  <a href="https://wa.me/919911523068?text=Hi%20LuxeVally%2C%20I%20would%20like%20to%20enquire." target="_blank"
+    rel="noopener"
+    class="fixed bottom-6 right-6 z-40 bg-[#25D366] text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:scale-110 transition-transform"
+    aria-label="Chat on WhatsApp">
+    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.139-1.633-.79-1.925-.935-.292-.145-.504-.216-.716.145-.212.36-.824.935-1.012 1.124-.188.181-.375.203-.694.067-.319-.135-1.345-.495-2.56-1.577-.948-.846-1.587-1.89-1.774-2.21-.186-.32-.02-.494.14-.65.143-.143.319-.373.478-.56.16-.188.213-.32.319-.534.106-.213.053-.4-.027-.56-.08-.16-.716-1.725-.982-2.36-.26-.618-.525-.534-.716-.544-.186-.01-.4-.012-.614-.012-.213 0-.56.08-.853.4-.292.32-1.12 1.093-1.12 2.665 0 1.572 1.147 3.093 1.307 3.306.16.213 2.25 3.434 5.45 4.812 3.2 1.378 3.2.919 3.776.86.576-.06 1.85-.756 2.112-1.486.262-.73.262-1.356.183-1.486-.08-.13-.292-.213-.59-.352z" />
+      <path
+        d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.512a.5.5 0 00.612.64l4.713-1.55A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.16 0-4.162-.65-5.84-1.76l-.418-.26-3.05 1.004 1.01-2.95-.272-.43A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+    </svg>
+  </a>
+
+  <!-- Cookie -->
+  <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-luxe-deep text-white p-4 z-50 hidden">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+      <p>We use cookies to enhance your browsing experience. By continuing, you agree to our <a
+          href="privacy-policy.html" class="underline">Privacy Policy</a>.</p>
+      <button type="button" onclick="acceptCookies()"
+        class="bg-luxe-gold text-luxe-deep px-6 py-2 rounded font-medium hover:opacity-90 transition whitespace-nowrap">Accept</button>
+    </div>
+  </div>
+
+  <script>tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'luxe-green': '#703934',
+            'luxe-deep': '#470214',
+            'luxe-gold': '#E0CA9A',
+            'luxe-cream': '#F7F1E4',
+            'luxe-warm': '#E0CA9A',
+            'luxe-soft': '#FAF6EF',
+          }, fontFamily: {script: ['Great Vibes', 'cursive'], serif: ['Cormorant Garamond', 'serif'], sans: ['Inter', 'sans-serif']}
+        }
+      }
+    }</script>
+  <script src="../js/products.js"></script>
+  <script src="../js/order.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+.env
+.env.local
+.vercel
+node_modules/
+server/.env
+server/data/admin.json
+server/data/reset-tokens.json

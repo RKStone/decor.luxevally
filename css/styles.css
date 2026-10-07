@@ -1,0 +1,395 @@
+:root {
+  --luxe-primary: #703934;
+  --luxe-deep: #470214;
+  --luxe-gold: #E0CA9A;
+  --luxe-cream: #F7F1E4;
+  --luxe-soft: #FAF6EF;
+}
+
+/* Unified typography — Inter site-wide; script only for brand logo */
+:root {
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-brand: "Great Vibes", cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+.font-sans,
+.font-serif,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+input,
+select,
+textarea,
+label,
+span,
+li {
+  font-family: var(--font-body) !important;
+}
+
+.font-script,
+.font-script * {
+  font-family: var(--font-brand) !important;
+}
+
+/* Headings weight consistency */
+h1,
+h2,
+h3,
+.font-serif {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+/* LuxeVally Custom Styles */
+
+
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Smooth image loading */
+img {
+  background-color: #f0ebe3;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #703934;
+  outline-offset: 2px;
+}
+
+/* Product card hover refinement */
+.group:hover .group-hover\:scale-105 {
+  transform: scale(1.05);
+}
+
+/* Quantity selector */
+.qty-btn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.qty-btn:hover {
+  background: #F7F1E4;
+}
+
+/* Gallery thumbnail active */
+.thumb-active {
+  border-color: #703934 !important;
+  opacity: 1 !important;
+}
+
+/* Filter checkbox */
+.filter-check:checked+span {
+  color: #703934;
+  font-weight: 500;
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Print styles */
+@media print {
+
+  header,
+  footer,
+  #cookie-banner,
+  .fixed {
+    display: none !important;
+  }
+}
+
+/* Product listing cards (reference-style) */
+.product-card .card-img-primary {
+  transition: opacity 0.45s ease, transform 0.7s ease;
+}
+
+.product-card:hover .card-img-primary:not(.group-hover\:opacity-0) {
+  transform: scale(1.03);
+}
+
+/* Prevent add-to-cart click from navigating */
+.product-card button[data-add-to-cart] {
+  pointer-events: auto;
+}
+
+/* Toolbar dropdowns */
+#sort-menu,
+#filter-menu {
+  animation: fadeIn 0.15s ease;
+}
+
+
+/* Mobile nav smooth open/close */
+#mobile-menu {
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+}
+
+#mobile-shop-menu {
+  transition: max-height 0.3s ease, opacity 0.25s ease;
+}
+
+#mobile-shop-chevron.rotate-180 {
+  transform: rotate(180deg);
+}
+
+/* ——— Smooth hover transitions on all buttons & controls ——— */
+button,
+a[class*="bg-"],
+a[class*="border"],
+input[type="submit"],
+input[type="button"],
+.qty-btn,
+[data-add-to-cart],
+label.cursor-pointer {
+  transition:
+    background-color 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease,
+    opacity 0.25s ease,
+    filter 0.25s ease;
+}
+
+/* Primary / solid buttons – subtle lift + shadow */
+button[class*="bg-luxe"],
+a[class*="bg-luxe"],
+button[class*="bg-[#25D366]"],
+a[class*="bg-[#25D366]"],
+a[class*="bg-\\[#25D366\\]"] {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    opacity 0.25s ease;
+}
+
+button[class*="bg-luxe"]:hover,
+a[class*="bg-luxe"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(26, 60, 52, 0.2);
+}
+
+/* Outline / ghost buttons */
+button[class*="border"],
+a[class*="border-luxe"],
+a[class*="border border"] {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Icon-only header buttons */
+header button,
+header a.p-2,
+header a[aria-label] {
+  transition: color 0.25s ease, background-color 0.25s ease, transform 0.2s ease;
+}
+
+header button:hover,
+header a.p-2:hover {
+  transform: scale(1.05);
+}
+
+/* WhatsApp floating button */
+a[aria-label="Chat on WhatsApp"],
+a.fixed.bottom-6 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.25s ease !important;
+}
+
+a[aria-label="Chat on WhatsApp"]:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+}
+
+/* Footer social icon buttons */
+footer a[aria-label="Instagram"],
+footer a[aria-label="Facebook"],
+footer a[aria-label="YouTube"] {
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+footer a[aria-label="Instagram"]:hover,
+footer a[aria-label="Facebook"]:hover,
+footer a[aria-label="YouTube"]:hover {
+  transform: translateY(-2px);
+}
+
+/* Nav links */
+nav a,
+#mobile-menu a {
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+/* Sort / filter toolbar buttons */
+#sort-btn,
+#filter-btn,
+.sort-option,
+#apply-filters,
+#clear-filters {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+/* Product card action buttons on hover overlay */
+.product-card button,
+.product-card a {
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+/* Form controls focus soft transition */
+input,
+select,
+textarea {
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+/* Active press feedback */
+button:active:not(:disabled),
+a[class*="bg-"]:active {
+  transform: translateY(0) scale(0.98);
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Gehen-style mobile drawer */
+#mobile-menu.translate-x-0 {
+  transform: translateX(0);
+}
+
+#mobile-drawer-overlay.opacity-100 {
+  pointer-events: auto;
+}
+
+/* Scroll to top */
+#scroll-top-btn {
+  transition: opacity 0.3s ease, transform 0.25s ease, background-color 0.25s ease;
+}
+
+#scroll-top-btn:hover {
+  transform: translateY(-2px);
+}
+
+#mobile-collection-menu {
+  transition: max-height 0.3s ease, opacity 0.25s ease;
+}
+
+#mobile-collection-chevron.rotate-180 {
+  transform: rotate(180deg);
+}
+
+/* Product image slider */
+#pdp-slider {
+  touch-action: pan-y;
+}
+
+#slider-track {
+  will-change: transform;
+}
+
+#slider-track>div {
+  min-width: 100%;
+}
+
+/* Mobile drawer open/close (explicit) */
+#mobile-menu {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+#mobile-menu.translate-x-0 {
+  transform: translateX(0);
+}
+
+#mobile-drawer-overlay {
+  transition: opacity 0.3s ease;
+}
+
+#mobile-shop-menu {
+  transition: max-height 0.3s ease, opacity 0.25s ease;
+}
+
+#mobile-shop-chevron.rotate-180 {
+  transform: rotate(180deg);
+}
+
+/* PDP two-column */
+#product-container .md\:grid-cols-2>div:first-child {
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  #product-container .lg\:sticky {
+    position: sticky;
+    top: 7rem;
+  }
+}
+
+/* Responsive header / drawer */
+#mobile-menu {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+
+#mobile-menu.translate-x-0 {
+  transform: translateX(0);
+}
+
+#mobile-drawer-overlay.opacity-100 {
+  pointer-events: auto;
+}
+
+@media (min-width: 1024px) {
+
+  #mobile-menu,
+  #mobile-drawer-overlay {
+    display: none !important;
+  }
+}
